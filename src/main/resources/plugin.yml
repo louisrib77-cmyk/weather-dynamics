@@ -1,0 +1,15 @@
+name: DynamicWeather
+version: 1.0.0
+main: de.louis.dynamicweather.DynamicWeather
+api-version: "26.2"
+description: Wetter beeinflusst Sicht, bestimmte Mobs und ausgewaehlte Spielmechaniken.
+commands:
+  dynamicweather:
+    description: DynamicWeather verwalten
+    usage: /<command> reload
+    aliases: [dweather]
+    permission: dynamicweather.admin
+permissions:
+  dynamicweather.admin:
+    description: Config neu laden
+    default: op

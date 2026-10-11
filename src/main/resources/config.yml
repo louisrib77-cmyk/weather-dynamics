@@ -1,0 +1,35 @@
+# Welten, in denen das Wetter wirkt. Leer = alle Oberwelt-Welten.
+enabled-worlds: []
+
+# Wie oft Spieler geprueft werden (Sekunden)
+check-interval-seconds: 2
+
+# ---------- Sicht ----------
+# Gilt nur fuer Spieler unter freiem Himmel (nicht in Hoehlen/Haeusern)
+visibility:
+  # Dunkelheit-Effekt im Gewitter
+  thunder-darkness: true
+  # Dunkelheit-Effekt schon bei normalem Regen
+  rain-darkness: false
+
+# ---------- Mobs ----------
+mobs:
+  # Monster, die im Gewitter unter freiem Himmel spawnen, werden staerker
+  thunder-buff: true
+  types: [ZOMBIE, SKELETON, SPIDER, CREEPER]
+  # Level 0 = aus, 1 = Stufe I, 2 = Stufe II ...
+  speed-level: 1
+  strength-level: 1
+  duration-seconds: 300
+
+# ---------- Spielmechaniken ----------
+mechanics:
+  # Pflanzen wachsen bei Regen schneller
+  rain-crop-growth: true
+  # Chance, dass ein Wachstumsschritt bei Regen zusaetzlich eine Stufe bringt
+  crop-bonus-chance: 0.25
+  # Spieler unter freiem Himmel sind im Gewitter langsamer
+  thunder-slowness: false
+  # Wind im Gewitter: Pfeile von Spielern streuen staerker
+  thunder-arrow-wind: true
+  arrow-wind-strength: 0.08
